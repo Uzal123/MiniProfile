@@ -66,7 +66,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center p-6">
         <a
-          href="/Resume.pdf"
+          href="/ujjwal-resume.pdf"
           download
           className="flex justify-center items-center bg-black text-white px-5 rounded-lg gap-2 "
         >
@@ -116,39 +116,25 @@ export default function Home() {
           <div className="md:w-3/4 px-8">
             <div className="grid md:grid-cols-2 gap-6">
               <ProjectItems
-                title="Command Program"
-                url="#"
-                imglink={
-                  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1120&q=80"
-                }
+                title="Aaru Travels"
+                url="https://aaru-tours.vercel.app"
+                imglink={"./aarutours.PNG"}
               />
               <ProjectItems
-                title="Project Mecha"
-                url="#"
-                imglink={
-                  "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                }
+                title="Feather Shoe"
+                url="https://feathershoes.vercel.app/"
+                imglink={"./feathershoe.PNG"}
+              />
+
+              <ProjectItems
+                title="Travel Company"
+                url="https://travel-company-kohl.vercel.app"
+                imglink={"./travelcompany.PNG"}
               />
               <ProjectItems
-                title="Dynamic Program"
-                url="#"
-                imglink={
-                  "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                }
-              />
-              <ProjectItems
-                title="Tech Web"
-                url="#"
-                imglink={
-                  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                }
-              />
-              <ProjectItems
-                title="Westerners"
-                url="#"
-                imglink={
-                  "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                }
+                title="Portfolio Project"
+                url="https://portfolio-ujjwal.herokuapp.com"
+                imglink={"./portfolioproject.PNG"}
               />
             </div>
           </div>
@@ -229,18 +215,20 @@ const List = ({ title , level , ...props})=> {
 
 const ProjectItems = ({title , imglink , url , ...props}) => {
     return (
-      <div className="relative cursor-pointer card " >
-        <img
-          src={imglink}
-          className="rounded-xl object-cover h-full w-full"
-        />
+      <a
+        className="relative cursor-pointer card shadow-xl rounded-xl"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={imglink} className="rounded-xl object-cover h-full w-full" />
         <div className="absolute bottom-0 h-full w-full overlay rounded-xl"></div>
         <div className="absolute bottom-0 p-4">
           <div className="text-2xl font-bold text-transparent title">
             {title}
           </div>
           <div className="bar h-1 rounded-full"></div>
-          <i className="hidden icon" href={url}>
+          <i className="hidden icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -252,6 +240,6 @@ const ProjectItems = ({title , imglink , url , ...props}) => {
             </svg>
           </i>
         </div>
-      </div>
+      </a>
     );
 }
