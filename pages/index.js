@@ -5,6 +5,7 @@ import Github from "../public/github.svg";
 import Mail from "../public/mail.svg";
 import Whatsapp from "../public/whatsapp.svg";
 import Download from "../public/download.svg";
+import Head from "next/head";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <div>
+        <Head><title>Ujjwal Paswan - Profile</title></Head>
       <header className="p-8">
         <div className="flex justify-center">
           <img
