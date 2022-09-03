@@ -14,7 +14,9 @@ export default function Home() {
 
   return (
     <div>
-        <Head><title>Ujjwal Paswan - Profile</title></Head>
+      <Head>
+        <title>Ujjwal Paswan - Profile</title>
+      </Head>
       <header className="p-8">
         <div className="flex justify-center">
           <img
@@ -144,16 +146,26 @@ export default function Home() {
           <div className="md:w-3/4 px-8">
             <div className="grid md:grid-cols-2 gap-6">
               <ProjectItems
-                title="Aaru Travels"
-                url="https://aaru-tours.vercel.app"
-                imglink={"./aarutours.PNG"}
-              />
-              <ProjectItems
                 title="Feather Shoe"
                 url="https://feathershoes.vercel.app/"
                 imglink={"./feathershoe.PNG"}
               />
+              <ProjectItems
+                title="Aaru Travels"
+                url="https://aaru-tours.vercel.app"
+                imglink={"./aarutours.PNG"}
+              />
 
+              <ProjectItems
+                title="Weather App"
+                url="https://weatherappujjwal.netlify.app"
+                imglink={"./weatherapp.PNG"}
+              />
+              <ProjectItems
+                title="Hotel App"
+                url="https://dazziieltd.netlify.app/"
+                imglink={"./dashboard.PNG"}
+              />
               <ProjectItems
                 title="Travel Company"
                 url="https://travel-company-kohl.vercel.app"
