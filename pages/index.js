@@ -164,7 +164,7 @@ export default function Home() {
               <ProjectItems
                 title="Hotel App"
                 url="https://dazziieltd.netlify.app/"
-                imglink={"./dashboard.PNG"}
+                imglink={"./dashboard.png"}
               />
               <ProjectItems
                 title="Travel Company"
