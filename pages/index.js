@@ -54,17 +54,17 @@ export default function Home() {
       </header>
       <div className="flex justify-center gap-4 p-2">
         <div className="text-center">
-          <p className="font-bold">2+</p>
+          <p className="font-bold">1+</p>
           <p>Years of</p>
           <p>Self Learning</p>
         </div>
         <div className="text-center">
-          <p className="font-bold">25+</p>
+          <p className="font-bold">10+</p>
           <p>Completed</p>
           <p>Projects</p>
         </div>
         <div className="text-center">
-          <p className="font-bold">5+</p>
+          <p className="font-bold">2</p>
           <p>Internships</p>
         </div>
       </div>
@@ -187,11 +187,11 @@ export default function Home() {
                 Front-End Skills
               </h2>
               <div className="grid grid-cols-2  gap-4">
-                <List title="Html 5" level="Basic" />
-                <List title="React" level="Intermediate" />
-                <List title="Next.js" level="basic" />
-                <List title="CSS/SCSS" level="basic" />
-                <List title="HTML 5" level="basic" />
+                <List title="Html 5" level="Intermediate" />
+                <List title="React.js" level="Intermediate" />
+                <List title="Next.js" level="Intermediate" />
+                <List title="CSS/SCSS" level="Intermediate" />
+                <List title="Tailwind" level="Intermediate" />
               </div>
             </div>
             <div className="md:px-8">
@@ -200,10 +200,9 @@ export default function Home() {
               </h2>
               <div className="grid grid-cols-2  gap-4">
                 <List title="Node" level="Basic" />
-                <List title="Express" level="Intermediate" />
+                <List title="Express" level="Basic" />
                 <List title="MongoDB" level="basic" />
                 <List title="Swagger" level="basic" />
-                <List title="HTML 5" level="basic" />
               </div>
             </div>
           </div>
