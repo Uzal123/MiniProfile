@@ -54,7 +54,7 @@ export default function Home() {
       </header>
       <div className="flex justify-center gap-4 p-2">
         <div className="text-center">
-          <p className="font-bold">1+</p>
+          <p className="font-bold">2+</p>
           <p>Years of</p>
           <p>Self Learning</p>
         </div>
@@ -145,6 +145,27 @@ export default function Home() {
         <div className="flex justify-center w-full py-4 md:py-8">
           <div className="md:w-3/4 px-8">
             <div className="grid md:grid-cols-2 gap-6">
+
+            <h1 className="md:col-span-2 text-center text-2xl font-semibold">Full Stack Projects</h1>
+
+            <ProjectItems
+                title="MotoGhar - sell and rental Marketplace"
+                url="https://motoghar.com/"
+                imglink={"./Home.png"}
+              />
+              <ProjectItems
+                title="Namma SKIT - College Website"
+                url="https://nammaskit.live/"
+                imglink={"./Capture.PNG"}
+              />
+
+              <h1 className="md:col-span-2 text-center text-2xl font-semibold">Frontend Projects</h1>
+
+              <ProjectItems
+                title="KNLOS NETWORKS - landing page"
+                url="https://clouddot.vercel.app/"
+                imglink={"./knlosnetworks.PNG"}
+              />
               <ProjectItems
                 title="Feather Shoe"
                 url="https://feathershoes.vercel.app/"
