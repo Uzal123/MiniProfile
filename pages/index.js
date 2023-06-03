@@ -227,8 +227,8 @@ export default function Home() {
       ) : (
         <div className="flex justify-center py-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="md:px-8">
-              <h2 className="text-2xl font-bold text-center py-2 ">
+            <div className="md:px-8 px-4">
+              <h2 className="text-2xl font-bold md:text-center py-2 ">
                 Front-End Skills
               </h2>
               <div className="grid grid-cols-2  gap-4">
@@ -243,8 +243,8 @@ export default function Home() {
                 <List title="Bootstrap" icon={<FaBootstrap className="h-6 w-6"/>} />
               </div>
             </div>
-            <div className="md:px-8">
-              <h2 className="text-2xl font-bold text-center py-2 ">
+            <div className="md:px-8 px-4">
+              <h2 className="text-2xl font-bold md:text-center py-2 ">
                 Back-End Skills
               </h2>
               <div className="grid grid-cols-2  gap-4">
@@ -256,11 +256,11 @@ export default function Home() {
                 <List title="Mongoose" icon={<DiMongodb className="h-6 w-6"/>} />
               </div>
             </div>
-            <div className="md:px-8 col-span-2">
-              <h2 className="text-2xl font-bold text-center py-2 ">
+            <div className="md:px-8 px-4 md:col-span-2">
+              <h2 className="text-2xl font-bold md:text-center py-2 ">
                 Other Skills and Tools
               </h2>
-              <div className="grid grid-cols-4 items-center justify-center gap-4">
+              <div className="grid md:grid-cols-4 grid-cols-2 items-center justify-center gap-4">
                 <List title="Nginx" icon={<SiNginx className="h-6 w-6"/>}/>
                 <List title="PM2" icon={<SiPm2 className="h-6 w-6"/>} />
                 <List title="Git/Github" icon={<BsGit className="h-6 w-6"/>} />
@@ -298,7 +298,7 @@ const List = ({ title ,icon, ...props})=> {
           {icon}
         </i>
         <div className="px-2">
-          <h2 className="text-xl font-light">{title}</h2>
+          <h2 className="md:text-lg text-md font-light">{title}</h2>
           {/* <h2>{level}</h2> */}
         </div>
       </div>
