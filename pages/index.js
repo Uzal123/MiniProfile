@@ -6,6 +6,30 @@ import Mail from "../public/mail.svg";
 import Whatsapp from "../public/whatsapp.svg";
 import Download from "../public/download.svg";
 import Head from "next/head";
+import {AiFillHtml5} from "react-icons/ai";
+import {FaCss3Alt} from "react-icons/fa";
+import {SiTailwindcss} from "react-icons/si";
+import {IoLogoJavascript} from "react-icons/io";
+import {SiTypescript} from "react-icons/si";
+import {FaReact} from "react-icons/fa";
+import {FaBootstrap} from "react-icons/fa";
+import {SiExpress} from "react-icons/si";
+import {BiLogoBootstrap} from "react-icons/bi";
+import {TbBrandNextjs} from "react-icons/tb";
+import {IoLogoNodejs} from "react-icons/io";
+import {SiSwagger} from "react-icons/si";
+import {SiNestjs} from "react-icons/si";
+import {GrGraphQl} from "react-icons/gr";
+import {SiMongodb} from "react-icons/si";
+import {DiMongodb} from "react-icons/di";
+import {SiNginx} from "react-icons/si";
+import {SiPm2} from "react-icons/si";
+import {BsGit} from "react-icons/bs";
+import {FaAws} from "react-icons/fa";
+import {SiCplusplus} from "react-icons/si";
+import {SiOracle} from "react-icons/si";
+import {FaSass} from "react-icons/fa";
+
 
 
 export default function Home() {
@@ -208,11 +232,15 @@ export default function Home() {
                 Front-End Skills
               </h2>
               <div className="grid grid-cols-2  gap-4">
-                <List title="Html 5" level="Intermediate" />
-                <List title="React.js" level="Intermediate" />
-                <List title="Next.js" level="Intermediate" />
-                <List title="CSS/SCSS" level="Intermediate" />
-                <List title="Tailwind" level="Intermediate" />
+                <List title="Html" icon={<AiFillHtml5 className="h-6 w-6"/>}/>
+                <List title="CSS"  icon={<FaCss3Alt className="h-6 w-6"/>}/>
+                <List title="Sass" icon={<FaSass className="h-6 w-6"/>}/>
+                <List title="Tailwind" icon={<SiTailwindcss className="h-6 w-6"/>} />
+                <List title="Javascript" icon={<IoLogoJavascript className="h-6 w-6"/>} />
+                <List title="Typescript" icon={<SiTypescript className="h-6 w-6" />} />
+                <List title="Reactjs" icon={<FaReact className="h-6 w-6"/>} />
+                <List title="Nextjs" icon={<TbBrandNextjs className="h-6 w-6"/>} />
+                <List title="Bootstrap" icon={<FaBootstrap className="h-6 w-6"/>} />
               </div>
             </div>
             <div className="md:px-8">
@@ -220,10 +248,27 @@ export default function Home() {
                 Back-End Skills
               </h2>
               <div className="grid grid-cols-2  gap-4">
-                <List title="Node" level="Basic" />
-                <List title="Express" level="Basic" />
-                <List title="MongoDB" level="basic" />
-                <List title="Swagger" level="basic" />
+                <List title="Nodejs" icon={<IoLogoNodejs className="h-6 w-6"/>} />
+                <List title="Nestjs" icon={<SiNestjs className="h-6 w-6"/>} />
+                <List title="MongoDB" icon={<SiMongodb className="h-6 w-6"/>} />
+                <List title="GraphQL" icon={<GrGraphQl className="h-6 w-6"/>} />
+                <List title="Swagger" icon={<SiSwagger className="h-6 w-6"/>} />
+                <List title="Mongoose" icon={<DiMongodb className="h-6 w-6"/>} />
+              </div>
+            </div>
+            <div className="md:px-8 col-span-2">
+              <h2 className="text-2xl font-bold text-center py-2 ">
+                Other Skills and Tools
+              </h2>
+              <div className="grid grid-cols-4 items-center justify-center gap-4">
+                <List title="Nginx" icon={<SiNginx className="h-6 w-6"/>}/>
+                <List title="PM2" icon={<SiPm2 className="h-6 w-6"/>} />
+                <List title="Git/Github" icon={<BsGit className="h-6 w-6"/>} />
+                <List title="AWS - S3" icon={<FaAws className="h-6 w-6"/>} />
+                <List title="AWS - EC2" icon={<FaAws className="h-6 w-6"/>} />
+                <List title="Github Actions" icon={<BsGit className="h-6 w-6"/>} />
+                <List title="Oracle SQL" icon={<SiOracle className="h-6 w-6"/>} />
+                <List title="C/C++" icon={<SiCplusplus className="h-6 w-6"/>} />
               </div>
             </div>
           </div>
@@ -246,28 +291,15 @@ const TabItem = ({ title, tab, id, onClick, ...props }) => {
   );
 };
 
-const List = ({ title , level , ...props})=> {
+const List = ({ title ,icon, ...props})=> {
     return (
       <div className="flex px-3">
         <i className="flex justify-center items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+          {icon}
         </i>
         <div className="px-2">
-          <h2 className="text-xl font-bold">{title}</h2>
-          <h2>{level}</h2>
+          <h2 className="text-xl font-light">{title}</h2>
+          {/* <h2>{level}</h2> */}
         </div>
       </div>
     );
