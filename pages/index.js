@@ -77,6 +77,11 @@ export default function Home() {
         </div>
       </header>
       <div className="flex justify-center gap-4 p-2">
+      <div className="text-center">
+          <p className="font-bold">1+</p>
+          <p>Years of</p>
+          <p>Corporate Experience</p>
+        </div>
         <div className="text-center">
           <p className="font-bold">2+</p>
           <p>Years of</p>
@@ -88,7 +93,7 @@ export default function Home() {
           <p>Projects</p>
         </div>
         <div className="text-center">
-          <p className="font-bold">2</p>
+          <p className="font-bold">3</p>
           <p>Internships</p>
         </div>
       </div>
@@ -102,32 +107,6 @@ export default function Home() {
           <Download />
         </a>
         <div className="flex justify-center gap-1 p-2">
-          <a
-            href="https://ujjwal-resume.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-300 w-10 h-10 rounded-md flex items-center justify-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-              />
-            </svg>
-          </a>
           <a
             href="https://wa.me/+918592031812"
             target="_blank"
@@ -174,12 +153,12 @@ export default function Home() {
 
             <ProjectItems
                 title="MotoGhar - sell and rental Marketplace"
-                url="https://motoghar.com/"
+                url="https://github.com/Uzal123/bikeapp"
                 imglink={"./Home.png"}
               />
               <ProjectItems
                 title="Namma SKIT - College Website"
-                url="https://nammaskit.live/"
+                url="https://github.com/Uzal123/nammaSkit"
                 imglink={"./Capture.PNG"}
               />
 
