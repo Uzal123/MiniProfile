@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center gap-4 p-2">
           <a
-            href="https://www.linkedin.com/in/ujjwal-paswan-a71b9a205/"
+            href="https://www.linkedin.com/in/uzwalk/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +80,7 @@ export default function Home() {
       <div className="text-center">
           <p className="font-bold">1+</p>
           <p>Years of</p>
-          <p>Corporate Experience</p>
+          <p>Corporate Exp</p>
         </div>
         <div className="text-center">
           <p className="font-bold">2+</p>
